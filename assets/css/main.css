@@ -2070,6 +2070,7 @@
 			border-top: solid 1px rgba(255, 255, 255, 0.15);
 			position: relative;
 			text-align: center;
+			overflow: hidden;
 		}
 
 			.features section:nth-child(-n + 2) {
@@ -2267,10 +2268,6 @@
 
 		@media screen and (max-width: 736px) {
 
-			.features section {
-				padding: 2.5em 1.5em 0.1em 5.5em ;
-			}
-
 				.features section .icon {
 					left: 1.5em;
 					top: 2em;
@@ -2279,10 +2276,6 @@
 		}
 
 		@media screen and (max-width: 480px) {
-
-			.features section {
-				padding: 2em 1.5em 0.1em 1.5em ;
-			}
 
 				.features section .icon {
 					left: 0;
@@ -3030,6 +3023,7 @@
 		-ms-flex-direction: row;
 		flex-direction: row;
 		min-height: 22.5em;
+
 	}
 
 		body.is-ie .spotlights > section {
@@ -3124,6 +3118,10 @@
 				padding: 4em 4em 2em 4em ;
 			}
 
+			.spotlights > section {
+				max-height: 25em;
+			}
+
 		}
 
 		@media screen and (max-width: 980px) {
@@ -3153,12 +3151,19 @@
 		@media screen and (max-width: 736px) {
 
 			.spotlights > section > .image {
-				height: 50vh;
+				max-height: 50em;
 				min-height: 15em;
 			}
 
 			.spotlights > section > .content {
 				padding: 3em 2em 1em 2em ;
+			}
+
+		}
+
+		@media screen and (max-width: 430px) {
+			.spotlights > section {
+				max-height: none;
 			}
 
 		}
