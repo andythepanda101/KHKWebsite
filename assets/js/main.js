@@ -188,7 +188,7 @@
 			if (x = $img.data('position'))
 				$image.css('background-position', x);
 
-			// Hide <img>.
+			Hide <img>.		//TODO: this is the bug thing
 			$img.hide();
 
 		});
