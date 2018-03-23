@@ -2073,6 +2073,10 @@
 			overflow: hidden;
 		}
 
+			.features > section > p {
+				overflow: hidden;
+			}
+
 			.features section:nth-child(-n + 2) {
 				border-top-width: 0;
 			}
@@ -2643,6 +2647,8 @@
 		.image.side {
 			float: left;
 			max-width: 40%;
+			height: 100%;
+			padding-right: .5em;
 		}
 
 			.image.side img {
@@ -3036,16 +3042,17 @@
 			border-radius: 0;
 			display: block;
 			position: relative;
-
+			width: 25em;
+			max-width: 25em;
+			max-height: 25em;
 		}
 
 			.spotlights > section > .image img {
+				object-fit: cover;
 				border-radius: 0;
 				display: block;
 				max-width: 25em;
 				max-height: 25em;
-				height: 100%;
-				object-fit: cover;
 			}
 
 			.spotlights > section > .image:before {
@@ -3128,7 +3135,7 @@
 				display: block;
 			}
 
-			.spotlights > section > .image img {
+			.spotlights > section > .image {
 				display: none;
 			}
 
@@ -3152,8 +3159,9 @@
 			}
 
 			.spotlights > section > .image {
-				width: 100%;
+				width: 1000em;
 				max-height: 50em;
+				max-width: 100%;
 				min-height: 15em;
 				display: block;
 			}
@@ -3925,9 +3933,7 @@
 
 			@media screen and (max-width: 980px) {
 
-				#intro p br {
-					display: none;
-				}
+
 
 			}
 
