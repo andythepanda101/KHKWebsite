@@ -22,7 +22,7 @@ def generateHTML(member_info):
     name, BN, year, major, chair, bio = member_info.split("\t")
     image = "images/khkpics/&" + name.split(" ")[0] + ".jpg"
     if "wanson" in name:
-        image = "images/khkpics/%Goose.jpg"
+        image = "images/khkpics/&Goose.jpg"
     # generate the actual HTML
     result = """<section>\n <a class="image side"><img src="{}"/></a>\n""".format(image)
     result += """  <h2>{}</h2>\n""".format(name)
