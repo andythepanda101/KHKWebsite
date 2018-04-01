@@ -31,11 +31,11 @@ def generateHTML(member_info):
               "  <h3>Secretary</h3>\n", "  <h3>Treasurer</h3>\n", ""]
     result += titles[ExecTest(chair)]
 
-    body = """   <b>Name:</b> {} <br/>\n""".format(name)
-    body+= """   <b>Beta Number:</b> {} <br/>\n""".format(BN)
+    body= """   <b>Beta Number:</b> {} <br/>\n""".format(BN)
     body+= """   <b>Year:</b> {} <br/>\n""".format(year)
     body+= """   <b>Major:</b> {} <br/>\n""".format(major)
-    body+= """   <b>Chair(s):</b> {} <br/>\n""".format(chair)
+    if not "NULL" in chair:
+        body+= """   <b>Chair(s):</b> {} <br/>\n""".format(chair)
     #body+= """Bio: {} <br/>\n"""
 
     result += """  <p>\n{}  </p>\n</section>""".format(body)
