@@ -5,11 +5,9 @@
 
 function load_members(filename, member_section, $) {
   var requestURL = window.location.origin + '/' + filename;
-  console.log(requestURL);
 
   var callback = function(data) {
     var memberText = data.responseText;
-    console.log(memberText);
     var members = JSON.parse(memberText);
 
     $.each(members["members"], function (i, val) {
@@ -19,7 +17,6 @@ function load_members(filename, member_section, $) {
   };
 
   $.ajax({
-    dataType: "json",
     url: requestURL,
     complete: callback,
   });
