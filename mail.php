@@ -30,7 +30,7 @@
             <?php
               $errors = '';
               $myemail = 'tumax040@umn.edu';
-              if(empty($_POST['name'])  || empty($_POST['email']) || empty($_POST['message'])){
+              if(empty($_POST['name'])  || empty($_POST['email']) || !empty($_POST['honey'])){
                 $errors .= "\n Error: all fields are required";
               }
               $name = $_POST['name'];

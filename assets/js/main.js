@@ -85,17 +85,13 @@
 			})
 			.each(function() {
 
-				try {
-					var	$this = $(this),
-					id = $this.attr('href'),
+					var	$this = $(this);
+					id = $this.attr('href');
+					if (id[0] !== '#') {	// if this is an external link
+						return;
+					}
 					$section = $(id);
-				}
-				catch(e) {
-					console.log("THIS IS A HACK, JUST IGNORE IT -DEVON");
-					console.log("ONLY IGNORE THIS SINGLE ERROR THOUGH");
-					console.log(e);
-					return;
-				}
+
 
 
 				// No section for this link? Bail.
@@ -110,8 +106,8 @@
 					initialize: function() {
 
 						// Deactivate section.
-						if (skel.canUse('transition'))
-							$section.addClass('inactive');
+						// if (skel.canUse('transition'))
+						// 	$section.addClass('inactive');
 
 					},
 					enter: function() {
