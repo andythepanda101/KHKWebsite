@@ -1,40 +1,54 @@
 {
   "members" : [
     {
+      "name": "Mehraud Razzaghi",
+      "title": "President",
+      "bn": "891",
+      "year": "Sophomore",
+      "major": "Chemical Engineering",
+      "chair": "President",
+      "image": "&Mehraud",
+      "email": "razza014@umn.edu"
+    },
+    {
+      "name": "Benjamin DeStefanis",
+      "title": "Vice President",
+      "bn": "898",
+      "year": "Freshman",
+      "major": "Chemical Engineering",
+      "chair": "Vice President, Rush",
+      "image": "&Benjamin",
+      "email": "deste017@umn.edu"
+    },
+    {
+      "name": "Robert Renkor",
+      "title": "Treasurer",
+      "bn": "890",
+      "year": "Junior",
+      "major": "Computer Engineering",
+      "chair": "Treasurer, CPU, HPLC",
+      "image": "&Robert",
+      "email": "renko001@umn.edu"
+    },
+    {
+      "name": "Edward Hoey",
+      "title": "Secretary",
+      "bn": "892",
+      "year": "Sophomore",
+      "major": "Chemistry",
+      "chair": "Secretary, Rush",
+      "image": "&Edward",
+      "email": "hoeyx023@umn.edu"
+    },
+    {
       "name": "Meghan Kress",
       "title": "",
       "bn": "881",
       "year": "Senior",
       "major": "Architecture",
-      "chair": "President",
-      "image": "&Meghan"
-    },
-    {
-      "name": "Mehraud Razzaghi",
-      "title": "",
-      "bn": "891",
-      "year": "Sophomore",
-      "major": "Chemical Engineering",
-      "chair": "Vice President",
-      "image": "&Mehraud"
-    },
-    {
-      "name": "Tanis Kneevers",
-      "title": "",
-      "bn": "888",
-      "year": "Junior",
-      "major": "Economics",
-      "chair": "Secretary, Outreach",
-      "image": "&Tanis"
-    },
-    {
-      "name": "Robert Renkor",
-      "title": "",
-      "bn": "890",
-      "year": "Junior",
-      "major": "Computer Engineering",
-      "chair": "Treasurer, HPLC",
-      "image": "&Robert"
+      "chair": "Propaganda",
+      "image": "&Meghan",
+      "email": "kress040@umn.edu"
     },
     {
       "name": "Elizabeth Vo",
@@ -42,8 +56,9 @@
       "bn": "885",
       "year": "Junior",
       "major": "Electrical Engineering",
-      "chair": "PledgeChair, CPUChair, Historian",
-      "image": "&Elizabeth"
+      "chair": "Pledge, Historian",
+      "image": "&Elizabeth",
+      "email": "voxxx214@umn.edu"
     },
     {
       "name": "Niki Spence",
@@ -51,8 +66,9 @@
       "bn": "886",
       "year": "Junior",
       "major": "Civil Engineering",
-      "chair": "Initiation, Adviser to Social",
-      "image": "&Niki"
+      "chair": "Initiation",
+      "image": "&Niki",
+      "email": "spenc471@umn.edu"
     },
     {
       "name": "Jack Zofkie",
@@ -60,8 +76,19 @@
       "bn": "887",
       "year": "Junior",
       "major": "Mechanical Engineering",
-      "chair": "HouseManager, Initiation",
-      "image": "&Jack"
+      "chair": "Athletics, Initiation",
+      "image": "&Jack",
+      "email": "zofki002@umn.edu"
+    },
+    {
+      "name": "Tanis Kneevers",
+      "title": "",
+      "bn": "888",
+      "year": "Junior",
+      "major": "Economics",
+      "chair": "Social",
+      "image": "&Tanis",
+      "email": "kneev001@umn.edu"
     },
     {
       "name": "Veronica Falk",
@@ -69,17 +96,9 @@
       "bn": "889",
       "year": "Junior",
       "major": "Electrical Engineering",
-      "chair": "Pledge, Propaganda",
-      "image": "&Veronica"
-    },
-    {
-      "name": "Edward Hoey",
-      "title": "",
-      "bn": "892",
-      "year": "Sophomore",
-      "major": "Chemistry",
-      "chair": "Rush",
-      "image": "&Edward"
+      "chair": "Propaganda, Pledge, Outreach",
+      "image": "&Veronica",
+      "email": "falkx190@umn.edu"
     },
     {
       "name": "Tyler Leuwer",
@@ -87,8 +106,9 @@
       "bn": "893",
       "year": "Junior",
       "major": "Chemical Engineering",
-      "chair": "Pledge Chair",
-      "image": "&Tyler"
+      "chair": "House Manager, Athletics",
+      "image": "&Tyler",
+      "email": "leuwe003@umn.edu"
     },
     {
       "name": "Samuel Gagnon",
@@ -96,8 +116,9 @@
       "bn": "894",
       "year": "Sophomore",
       "major": "Black Magic",
-      "chair": "Abroad",
-      "image": "&Samuel"
+      "chair": "House Manager, Social",
+      "image": "&Samuel",
+      "email": "gagno094@umn.edu"
     },
     {
       "name": "Nathan DeLisle",
@@ -105,8 +126,9 @@
       "bn": "895",
       "year": "Sophomore",
       "major": "Materials Science and Engineering",
-      "chair": "Social, Athlecitcs",
-      "image": "&Nathan"
+      "chair": "",
+      "image": "&Nathan",
+      "email": "delis020@umn.edu"
     },
     {
       "name": "Samuel Swanson",
@@ -114,26 +136,19 @@
       "bn": "897",
       "year": "Sophomore",
       "major": "Computer Engineering",
-      "chair": "Librarian",
-      "image": "&Goose"
-    },
-    {
-      "name": "Benjamin DeStefanis",
-      "title": "",
-      "bn": "898",
-      "year": "Freshman",
-      "major": "Chemical Engineering",
-      "chair": "Social, Rush, Athletics",
-      "image": "&Benjamin"
+      "chair": "Social, Little Sister ",
+      "image": "&Goose",
+      "email": "swan2204@umn.edu"
     },
     {
       "name": "Devon Tuma",
       "title": "",
       "bn": "899",
       "year": "Sophomore",
-      "major": "Math/Csci",
+      "major": "Mathematics",
       "chair": "Webmaster, Initiation",
-      "image": "&Devon"
+      "image": "&Devon",
+      "email": "tumax040@umn.edu"
     },
     {
       "name": "Melanie Sumiec",
@@ -141,8 +156,9 @@
       "bn": "900",
       "year": "Junior",
       "major": "Bioproducts and Biosystems Engineering",
-      "chair": "Pledge and Propaganda",
-      "image": "&Melanie"
+      "chair": "Propaganda, Little Sister, Library",
+      "image": "&Melanie",
+      "email": "sumie001@umn.edu"
     },
     {
       "name": "Carol Svare",
@@ -150,8 +166,9 @@
       "bn": "901",
       "year": "Junior",
       "major": "Electrical Engineering",
-      "chair": "CSE Ambassador Outreach",
-      "image": "&Carol"
+      "chair": "Rush, Little Sister",
+      "image": "&Carol",
+      "email": "svare013@umn.edu"
     },
     {
       "name": "Bobby Hahn",
@@ -159,8 +176,9 @@
       "bn": "902",
       "year": "Junior",
       "major": "Computer Science",
-      "chair": "",
-      "image": ""
+      "chair": "Pledge, Outreach",
+      "image": "&Bobby",
+      "email": "hahnx302@umn.edu"
     }
   ]
 }

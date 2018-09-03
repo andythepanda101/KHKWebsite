@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Member Login</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="google-signin-client_id"
+			content="739219943019-623gqarfb1p8k9f86gmpnbk9baohpc2r.apps.googleusercontent.com">
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">KHK Members</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="login.html" class="active">Members</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<form id="edit_info" method="POST" action="login.php" style= "display: none">
+								<h1> Request Info Change </h1>
+								<div class="field">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" autocomplete="name" disabled/>
+								</div><br/>
+								<div class="field">
+									<label for="title">Title</label>
+									<select id="title" disabled>
+										<option value = "">None</option>
+										<option value = "President">President</option>
+										<option value = "Vice President">Vice President</option>
+										<option value = "Treasurer">Treasurer</option>
+										<option value = "Secretary">Secretary</option>
+									</select>
+								</div><br/>
+								<div class="field">
+									<label for="beta_number">Beta Number</label>
+									<input type="text" name="beta_number" id="beta_number" autocomplete="beta_number" disabled/>
+								</div><br/>
+								<div class="field">
+									<label for="year">Year</label>
+									<select id="year">
+										<option value = "Freshman">Freshman</option>
+										<option value = "Sophomore">Sophomore</option>
+										<option value = "Junior">Junior</option>
+										<option value = "Senior">Senior</option>
+									</select>
+								</div><br/>
+								<div class="field">
+									<label for="major">Major</label>
+									<select id="major">
+										<option value = "Aerospace Engineering and Mechanics">Aerospace Engineering and Mechanics</option>
+										<option value = "Architecture">Architecture</option>
+										<option value = "Astrophysics">Astrophysics</option>
+										<option value = "Biomedical Engineering">Biomedical Engineering</option>
+										<option value = "Bioproducts and Biosystems Engineering">Bioproducts and Biosystems Engineering</option>
+										<option value = "Chemical Engineering">Chemical Engineering</option>
+										<option value = "Chemistry">Chemistry</option>
+										<option value = "Civil Engineering">Civil Engineering</option>
+										<option value = "Computer Engineering">Computer Engineering</option>
+										<option value = "Computer Science">Computer Science</option>
+										<option value = "Earth Sciences">Earth Sciences</option>
+										<option value = "Electrical Engineering">Electrical Engineering</option>
+										<option value = "Environmental Engineering">Environmental Engineering</option>
+										<option value = "Geoengineering">Geoengineering</option>
+										<option value = "Industrial and Systems Engineering">Industrial and Systems Engineering</option>
+										<option value = "Materials Science and Engineering">Materials Science and Engineering</option>
+										<option value = "Mathematics">Mathematics</option>
+										<option value = "Mechanical Engineering">Mechanical Engineering</option>
+										<option value = "Physics">Physics</option>
+									</select>
+								</div><br/>
+								<div class="field">
+									<label for="chair">Chair(s)</label>
+									<input type="text" name="chair" id="chair" autocomplete="chair"/>
+								</div>
+								<input type="hidden" name="image" id="image" autocomplete="image" disabled/>
+								<input type="hidden" name="email" id="email" autocomplete="email" disabled/>
+								<ul class="actions">
+									<li><a href="" class="button submit">Request Change</a></li>
+								</ul>
+							</form>
+							<div id="error_msg">
+								<h3>You must login with your x500 and be a member of KHK to request an info change</h3>
+							</div>
+						</div>
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<p>
+							Kappa Eta Kappa: Beta Chapter <br/>
+							<a id = "edit_member" href = "login.html" style="display: none">
+								Request Info Change
+							</a>
+							<a id = "bad_email" style="display: none">
+								<font color="red">Your email is not recognized as a member of KHK.</font>
+							</a> <br/>
+							<a id = "sign_out" href = "index.html" onclick = "signOut(); return false;" style="display: none">
+								Sign Out
+							</a> <br/>
+							<div class="g-signin2" data-onsuccess="onSignIn"></div>
+						</p>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+			<script src="https://apis.google.com/js/platform.js" async defer></script>
+			<script src="khk_assets/login.js"></script>
+	</body>
+</html>

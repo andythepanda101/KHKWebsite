@@ -17,7 +17,7 @@
 				<nav>
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html" class="active">Submission</a></li>
+						<li><a href="login.html" class="active">Members</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -28,39 +28,36 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
             <?php
-              $errors = '';
-              $myemail = 'tumax040@umn.edu, khk@umn.edu';
-              if(empty($_POST['name'])  || empty($_POST['email']) || !empty($_POST['honey'])){
-                $errors .= "\n Error: all fields are required";
-              }
+              $myemail = 'tumax040@umn.edu';
               $name = $_POST['name'];
-              $email_address = $_POST['email'];
-              $message = $_POST['message'];
+              $title = $_POST['title'];
+              $bn = $_POST['beta_number'];
+              $year = $_POST['year'];
+              $major = $_POST['major'];
+              $chair = $_POST['chair'];
+              $image = $_POST['image'];
+              $email = $_POST['email'];
 
-              // validate the email address with regex
-              if (!filter_var($email_address, FILTER_VALIDATE_EMAIL))
-                    {
-                      $errors .= "\n Error: Invalid email address";
-                    }
-
-              if(empty($errors)) {
-                $to = $myemail;
-                $email_subject = "KHK Website Submission: $name";
-                $email_body = "You have received a new message. ".
-                " Here are the details:\n Name: $name \n ".
-                "Email: $email_address\n Message \n $message";
-                $headers = "From: $myemail\n";
-                $headers .= "Reply-To: $email_address";
-                $result = mail($to,$email_subject,$email_body,$headers);
-                if($result){
-                  echo "Your message was sent successfully";
-                }
-                else {
-                  echo "Error: Your message could not be sent";
-                }
+              $to = $myemail;
+              $email_subject = "KHK Website Request: $name";
+              $email_body = "You have received a new reqest:\n\n".
+              "{\n\"name\": \"$name\",\n".
+              "  \"title\": \"$title\",\n".
+              "  \"bn\": \"$beta_number\",\n".
+              "  \"year\": \"$year\",\n".
+              "  \"major\": \"$major\",\n".
+              "  \"chair\": \"$chair\",\n".
+              "  \"image\": \"$image\",\n".
+              "  \"email\": \"$email\"\n".
+              "},";
+              $headers = "From: $myemail\n";
+              $headers .= "Reply-To: $myemail";
+              $result = mail($to, $email_subject, $email_body, $headers);
+              if($result){
+                echo "Your request was sent successfully";
               }
               else {
-                echo $errors;
+                echo "Error: Your message could not be sent";
               }
             ?>
 					</section>

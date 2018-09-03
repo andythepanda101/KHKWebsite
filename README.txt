@@ -4,7 +4,7 @@ Credits:
 
 	Template:
 		Hyperspace by HTML5 UP
-		
+
 	Icons:
 		Font Awesome (fortawesome.github.com/Font-Awesome)
 
