@@ -199,13 +199,13 @@
 			initialize: function() {
 
 				// Deactivate section.
-				$(this).addClass('inactive');
+				// $(this).addClass('inactive');
 
 			},
 			enter: function() {
 
 				// Activate section.
-				$(this).removeClass('inactive');
+				// $(this).removeClass('inactive');
 
 			}
 		});

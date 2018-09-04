@@ -13,7 +13,6 @@ function load_members(filename, member_section, $) {
     // for each member in the member array, make a member from them
     $.each(members["members"], function (i, val) {
       member_section.append(make_member(val));
-      console.log(val["email"]);
     });
   };
 
@@ -21,6 +20,7 @@ function load_members(filename, member_section, $) {
     url: requestURL,
     complete: callback,
     datatype: "json",
+    async: true,
   });
 }
 

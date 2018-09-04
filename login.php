@@ -43,15 +43,15 @@
               $email_body = "You have received a new reqest:\n\n".
               "{\n\"name\": \"$name\",\n".
               "  \"title\": \"$title\",\n".
-              "  \"bn\": \"$beta_number\",\n".
+              "  \"bn\": \"$bn\",\n".
               "  \"year\": \"$year\",\n".
               "  \"major\": \"$major\",\n".
               "  \"chair\": \"$chair\",\n".
               "  \"image\": \"$image\",\n".
               "  \"email\": \"$email\"\n".
               "},";
-              $headers = "From: $myemail\n";
-              $headers .= "Reply-To: $myemail";
+              $headers = "From: $email\n";
+              $headers .= "Reply-To: $email";
               $result = mail($to, $email_subject, $email_body, $headers);
               if($result){
                 echo "Your request was sent successfully";

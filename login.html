@@ -39,11 +39,11 @@
 								<h1> Request Info Change </h1>
 								<div class="field">
 									<label for="name">Name</label>
-									<input type="text" name="name" id="name" autocomplete="name" disabled/>
+									<input type="text" name="name" id="name" readonly="readonly"/>
 								</div><br/>
 								<div class="field">
 									<label for="title">Title</label>
-									<select id="title" disabled>
+									<select id="title" name="title" readonly="readonly">
 										<option value = "">None</option>
 										<option value = "President">President</option>
 										<option value = "Vice President">Vice President</option>
@@ -53,11 +53,11 @@
 								</div><br/>
 								<div class="field">
 									<label for="beta_number">Beta Number</label>
-									<input type="text" name="beta_number" id="beta_number" autocomplete="beta_number" disabled/>
+									<input type="text" name="beta_number" id="beta_number" readonly="readonly"/>
 								</div><br/>
 								<div class="field">
 									<label for="year">Year</label>
-									<select id="year">
+									<select id="year" name="year">
 										<option value = "Freshman">Freshman</option>
 										<option value = "Sophomore">Sophomore</option>
 										<option value = "Junior">Junior</option>
@@ -66,7 +66,7 @@
 								</div><br/>
 								<div class="field">
 									<label for="major">Major</label>
-									<select id="major">
+									<select id="major" name="major">
 										<option value = "Aerospace Engineering and Mechanics">Aerospace Engineering and Mechanics</option>
 										<option value = "Architecture">Architecture</option>
 										<option value = "Astrophysics">Astrophysics</option>
@@ -90,10 +90,10 @@
 								</div><br/>
 								<div class="field">
 									<label for="chair">Chair(s)</label>
-									<input type="text" name="chair" id="chair" autocomplete="chair"/>
+									<input type="text" name="chair" id="chair"/>
 								</div>
-								<input type="hidden" name="image" id="image" autocomplete="image" disabled/>
-								<input type="hidden" name="email" id="email" autocomplete="email" disabled/>
+								<input type="hidden" name="image" id="image"/>
+								<input type="hidden" name="email" id="email"/>
 								<ul class="actions">
 									<li><a href="" class="button submit">Request Change</a></li>
 								</ul>
