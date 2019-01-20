@@ -1,5 +1,11 @@
 Website for Beta chapter of Kappa Eta Kappa fraternity.
 
+To test the site locally, go to the directory with a command line and type:
+		python -m http.server
+This will only work if you have python3 installed
+
+
+
 Credits:
 
 	Template:

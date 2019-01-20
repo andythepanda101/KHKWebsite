@@ -33,17 +33,38 @@ function make_member(jsonObj) {
   var major = jsonObj["major"];
   var chair = jsonObj["chair"];
   var image = jsonObj["image"];
-  var html = $(`<section>
-                  <a class='image side'><img src='images/khkpics/` + image + `.jpg'/></a>
-                  <h2>` + name + `</h2>
-                  <h3>` + title + `</h3>
-                  <br/>
-                  <p>
-                    <b>Beta Number: </b>` + bn +`<br/>
-                    <b>Year: </b>` + year + `<br/>
-                    <b>Major: </b>` + major + `<br/>
-                    <b>Chair(s): </b>` + chair + `<br/>
-                  </p>
-                </section>`);
-  return html;
+  var bio = jsonObj["bio"].replace(`"`,"").replace(`'`,"");
+
+  var section = document.createElement("section");
+
+  var a = document.createElement("a");
+  a.setAttribute("class", "image side");
+  var img = document.createElement("img");
+  img.setAttribute("src", "images/khkpics/" + image + ".jpg");
+  a.append(img);
+  section.append(a);
+
+  var h2 = document.createElement("h2");
+  h2.innerText = name;
+  var h3 = document.createElement("h3");
+  h3.innerText = title;
+  section.append(h2);
+  section.append(h3);
+
+  var p = document.createElement("p");
+  p.innerHTML = `
+    <b>Beta Number: </b>` + bn +`<br/>
+    <b>Year: </b>` + year + `<br/>
+    <b>Major: </b>` + major + `<br/>
+    <b>Chair(s): </b>` + chair + `<br/>
+  `;
+  section.append(p);
+
+  var button = document.createElement("a");
+  button.setAttribute("class", "button scrolly");
+  button.setAttribute("onclick", "alert('" + bio + "')");
+  button.innerText = "More";
+  section.append(button);
+
+  return section;
 }
