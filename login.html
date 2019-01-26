@@ -16,7 +16,7 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
-	<body>
+	<body onload="previewFile()">
 
 		<!-- Header -->
 			<header id="header">
@@ -35,7 +35,7 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<form id="edit_info" method="POST" action="login.php" style= "display: none">
+							<form id="edit_info" method="POST" action="login.php" style="display: none" enctype="multipart/form-data">
 								<h1> Request Info Change </h1>
 								<div class="field">
 									<label for="name">Name</label>
@@ -92,13 +92,18 @@
 									<label for="chair">Chair(s)</label>
 									<input type="text" name="chair" id="chair"/>
 								</div>
+								<div>
+									<label for="imageFile">Photo (leave blank for no change)</label>
+									<input type="file" onchange="previewFile()" name="imageFile" id="imageFile" accept="image/*"><br>
+									<img src="" height="200" alt="Image preview..." id="imgPreview">
+								</div>
 								<input type="hidden" name="image" id="image"/>
 								<input type="hidden" name="email" id="email"/>
 								<ul class="actions">
 									<li><a href="" class="button submit">Request Change</a></li>
 								</ul>
 							</form>
-							<div id="error_msg">
+							<div id="error_msg" style="display: none">
 								<h3>You must login with your x500 and be a member of KHK to request an info change</h3>
 							</div>
 						</div>

@@ -30,18 +30,23 @@
             <?php
               $errors = '';
               $myemail = 'tumax040@umn.edu, khk@umn.edu';
-              if(empty($_POST['name'])  || empty($_POST['email']) || !empty($_POST['honey'])){
+              if(empty($_POST['name'])  || empty($_POST['email']) || !empty($_POST['honey'])) {
                 $errors .= "\n Error: all fields are required";
               }
+							if(!empty($_POST['honey'])) {
+								$errors .= "\n Error: it looks like you might be a bot";
+							}
+							if(!(strpos($_POST['email'], '@umn.edu') !== false)) {
+								$errors .= "\n Error: must use a umn email adress";
+							}
               $name = $_POST['name'];
               $email_address = $_POST['email'];
               $message = $_POST['message'];
 
               // validate the email address with regex
-              if (!filter_var($email_address, FILTER_VALIDATE_EMAIL))
-                    {
-                      $errors .= "\n Error: Invalid email address";
-                    }
+              if (!filter_var($email_address, FILTER_VALIDATE_EMAIL)){
+              	$errors .= "\n Error: Invalid email address";
+              }
 
               if(empty($errors)) {
                 $to = $myemail;
@@ -56,7 +61,7 @@
                   echo "Your message was sent successfully";
                 }
                 else {
-                  echo "Error: Your message could not be sent";
+                  echo "Error: Your message could not be sent due to a server error";
                 }
               }
               else {

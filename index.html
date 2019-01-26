@@ -17,7 +17,7 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
-	<body>
+	<body onload="emailChange()">
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
@@ -97,14 +97,14 @@
 							</section>
 						</section>
 
-					<!-- <section id="rush" class="wrapper style2">
+					<section id="rush" class="wrapper style2">
 						<div class="inner">
-							<h1>Sprint 2019 Rush</h1>
+							<h1>Spring 2019 Rush</h1>
 							<div class="image">
-								<img src="images/rush.png" width="100%"/>
+								<img src="images/rush.jpeg" width="100%"/>
 							</div>
 						</div>
-					</section> -->
+					</section>
 
 				<!-- Two -->
 					<section id="two" class="wrapper style3 fade-up">
@@ -115,6 +115,24 @@
 					</section>
 
 				<!-- Three -->
+					<script>
+						function emailChange() {
+							var email = $("#email");
+							var e = email.val();
+							if (!e.includes("@umn.edu") && !(e === "")) {
+								document.getElementById("emailError").innerText = "Must be an @umn.edu email. This helps us prevent spam."
+								document.getElementById("submit").setAttribute("disabled", 1);
+								email.css("border-color", "red");
+								email.css("color", "red");
+							}
+							else {
+								document.getElementById("emailError").innerText = ""
+								document.getElementById("submit").removeAttribute("disabled");
+								$("#email").css("border-color", "");
+								$("#email").css("color", "");
+							}
+						}
+					</script>
 					<section id="three" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h2>Get in touch</h2>
@@ -122,14 +140,15 @@
 								we'd love to hear from you. Contact us below or send us an email.</p>
 								<div class="split style1">
 									<section>
-										<form method="POST" action="mail.php">
+										<form method="POST" action="mail.php" id="messageForm">
 											<div class="field half first">
 												<label for="name">Name</label>
 												<input type="text" name="name" id="name" autocomplete="name"/>
 											</div>
 											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" autocomplete="email"/>
+												<label for="email" id="emailLabel">Email</label>
+												<input type="text" name="email" id="email" autocomplete="email" onchange="emailChange()"/>
+												<div id = "emailError" style="color:red"></div>
 											</div>
 											<div class="field">
 												<label for="message">Message</label>
@@ -138,9 +157,9 @@
 											<div>
 												<input type="hidden" name="honey" id="honey" autocomplete="address-level1"/>
 											</div>
-											<ul class="actions">
-												<li><a href="" class="button submit">Send Message</a></li>
-											</ul>
+											<div>
+												<input type="submit" class="button submit" id="submit" value="Send Message"/>
+											</div>
 										</form>
 									</section>
 									<section>

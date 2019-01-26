@@ -28,6 +28,8 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
             <?php
+							ini_set('display_errors', 'on');
+
               $myemail = 'tumax040@umn.edu';
               $name = $_POST['name'];
               $title = $_POST['title'];
@@ -37,28 +39,73 @@
               $chair = $_POST['chair'];
               $image = $_POST['image'];
               $email = $_POST['email'];
+							$errors = '';
 
-              $to = $myemail;
-              $email_subject = "KHK Website Request: $name";
-              $email_body = "You have received a new reqest:\n\n".
-              "{\n\"name\": \"$name\",\n".
-              "  \"title\": \"$title\",\n".
-              "  \"bn\": \"$bn\",\n".
-              "  \"year\": \"$year\",\n".
-              "  \"major\": \"$major\",\n".
-              "  \"chair\": \"$chair\",\n".
-              "  \"image\": \"$image\",\n".
-              "  \"email\": \"$email\"\n".
-              "},";
-              $headers = "From: $email\n";
-              $headers .= "Reply-To: $email";
-              $result = mail($to, $email_subject, $email_body, $headers);
-              if($result){
-                echo "Your request was sent successfully";
-              }
-              else {
-                echo "Error: Your message could not be sent";
-              }
+
+							// Handle the image upload portion
+							if (count($_FILES['imageFile']['tmp_name']) > 0) {
+								$image = $_FILES["imageFile"]["name"];
+								$target_dir = "images/khkpics/";
+								$target_file = $target_dir . basename($_FILES["imageFile"]["name"]);
+								$uploadOk = 1;
+								$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+								// Check if image file is a actual image or fake image
+								if(isset($_POST["submit"])) {
+								    $check = getimagesize($_FILES["imageFile"]["tmp_name"]);
+								    if($check !== false) {
+								        $uploadOk = 1;
+								    } else {
+								        $errors .= "Error: File is not an image.\n";
+								        $uploadOk = 0;
+								    }
+								}
+								// Check file size
+								if ($_FILES["imageFile"]["size"] > 500000) {
+								    $errors .= "Error: your image file is too large.\n";
+								    $uploadOk = 0;
+								}
+								// Check if $uploadOk is set to 0 by an error
+								if ($uploadOk == 0) {
+								    $errors .= "Sorry, your photo was not uploaded due to a previous error.\n";
+							  }
+							  else {
+									if (move_uploaded_file($_FILES["imageFile"]["tmp_name"], $target_file)) {
+											echo "The file ". basename( $_FILES["imageFile"]["name"]). " has been uploaded.\n";
+									} else {
+											print_r(error_get_last());
+											$errors .= "Sorry, the server encountered an error uploading your file.\n";
+									}
+								}
+							}
+
+
+							// Handle the email portion
+							if(empty($errors)) {
+								$to = $myemail;
+	              $email_subject = "KHK Website Request: $name";
+	              $email_body = "You have received a new reqest:\n\n".
+	              "{\n\"name\": \"$name\",\n".
+	              "  \"title\": \"$title\",\n".
+	              "  \"bn\": \"$bn\",\n".
+	              "  \"year\": \"$year\",\n".
+	              "  \"major\": \"$major\",\n".
+	              "  \"chair\": \"$chair\",\n".
+	              "  \"image\": \"$image\",\n".
+	              "  \"email\": \"$email\"\n".
+	              "},";
+	              $headers = "From: $email\n";
+	              $headers .= "Reply-To: $email";
+	              $result = mail($to, $email_subject, $email_body, $headers);
+	              if($result){
+	                echo "Your request was sent successfully\n";
+	              }
+	              else {
+	                echo "Error: Your message could not be sent due to a server error\n";
+	              }
+							}
+							else {
+								echo "\n\n" . $errors;
+							}
             ?>
 					</section>
 

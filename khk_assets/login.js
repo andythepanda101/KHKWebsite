@@ -21,7 +21,9 @@ function validate_email(email) {
     'hoeyx023@umn.edu', 'kress040@umn.edu', 'voxxx214@umn.edu', 'spenc471@umn.edu',
     'zofki002@umn.edu', 'kneev001@umn.edu', 'falkx190@umn.edu', 'leuwe003@umn.edu',
     'gagno094@umn.edu', 'delis020@umn.edu', 'swan2204@umn.edu', 'tumax040@umn.edu',
-    'sumie001@umn.edu', 'svare013@umn.edu', 'hahnx302@umn.edu'];
+    'sumie001@umn.edu', 'svare013@umn.edu', 'hahnx302@umn.edu', 'weis0744@umn.edu',
+    'egger235@umn.edu', 'dang0134@umn.edu', 'ung00001@umn.edu', 'kette061@umn.edu',
+    'ahuja028@umn.edu'];
   return khk_emails.includes(email);
 }
 
@@ -70,3 +72,19 @@ function populate_input(val) {
   $("#image").val(val["image"]);
   $("#email").val(val["email"]);
 }
+
+function previewFile(){
+       var preview = document.getElementById('imgPreview'); //selects the query named img
+       var file    = document.getElementById('imageFile').files[0]; //sames as here
+       var reader  = new FileReader();
+
+       reader.onloadend = function () {
+           preview.src = reader.result;
+       }
+
+       if (file) {
+           reader.readAsDataURL(file); //reads the data as a URL
+       } else {
+           preview.src = "";
+       }
+  }
