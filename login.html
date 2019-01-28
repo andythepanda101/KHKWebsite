@@ -39,11 +39,11 @@
 								<h1> Request Info Change </h1>
 								<div class="field">
 									<label for="name">Name</label>
-									<input type="text" name="name" id="name" readonly="readonly"/>
+									<input type="text" name="name" id="name"/>
 								</div><br/>
 								<div class="field">
 									<label for="title">Title</label>
-									<select id="title" name="title" readonly="readonly">
+									<select id="title" name="title">
 										<option value = "">None</option>
 										<option value = "President">President</option>
 										<option value = "Vice President">Vice President</option>
@@ -53,7 +53,7 @@
 								</div><br/>
 								<div class="field">
 									<label for="beta_number">Beta Number</label>
-									<input type="text" name="beta_number" id="beta_number" readonly="readonly"/>
+									<input type="text" name="beta_number" id="beta_number"/>
 								</div><br/>
 								<div class="field">
 									<label for="year">Year</label>
@@ -93,15 +93,22 @@
 									<input type="text" name="chair" id="chair"/>
 								</div>
 								<div>
-									<label for="imageFile">Photo (leave blank for no change)</label>
+									<label for="whichImage">Photo</label>
+									<select id="whichImage" name="whichImage">
+										<option value = "new">Use new image</option>
+										<option value = "old">Keep old image</option>
+									</select> <br>
 									<input type="file" onchange="previewFile()" name="imageFile" id="imageFile" accept="image/*"><br>
 									<img src="" height="200" alt="Image preview..." id="imgPreview">
 								</div>
+								<div>
+								</div>
 								<input type="hidden" name="image" id="image"/>
 								<input type="hidden" name="email" id="email"/>
-								<ul class="actions">
-									<li><a href="" class="button submit">Request Change</a></li>
-								</ul>
+								<br><br>
+								<div>
+									<input type="submit" class="button submit" name="submit" id="submit" value="Request Change"/>
+								</div>
 							</form>
 							<div id="error_msg" style="display: none">
 								<h3>You must login with your x500 and be a member of KHK to request an info change</h3>
@@ -116,13 +123,13 @@
 					<ul class="menu">
 						<p>
 							Kappa Eta Kappa: Beta Chapter <br/>
-							<a id = "edit_member" href = "login.html" style="display: none">
+							<a id="edit_member" href="login.html" style="display: none">
 								Request Info Change
 							</a>
-							<a id = "bad_email" style="display: none">
+							<a id="bad_email" style="display: none">
 								<font color="red">Your email is not recognized as a member of KHK.</font>
 							</a> <br/>
-							<a id = "sign_out" href = "index.html" onclick = "signOut(); return false;" style="display: none">
+							<a id="sign_out" href="index.html" onclick="signOut(); return false;" style="display: none">
 								Sign Out
 							</a> <br/>
 							<div class="g-signin2" data-onsuccess="onSignIn"></div>

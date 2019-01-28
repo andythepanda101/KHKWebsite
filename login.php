@@ -38,12 +38,13 @@
               $major = $_POST['major'];
               $chair = $_POST['chair'];
               $image = $_POST['image'];
+							$whichImage = $_POST['whichImage'];
               $email = $_POST['email'];
 							$errors = '';
 
 
 							// Handle the image upload portion
-							if (count($_FILES['imageFile']['tmp_name']) > 0) {
+							if (($whichImage == 'new') && count($_FILES['imageFile']['tmp_name']) > 0) {
 								$image = $_FILES["imageFile"]["name"];
 								$target_dir = "images/khkpics/";
 								$target_file = $target_dir . basename($_FILES["imageFile"]["name"]);
