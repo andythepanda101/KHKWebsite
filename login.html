@@ -43,7 +43,7 @@
 								</div><br/>
 								<div class="field">
 									<label for="title">Title</label>
-									<select id="title" name="title">
+									<select id="title" name="title" readonly>
 										<option value = "">None</option>
 										<option value = "President">President</option>
 										<option value = "Vice President">Vice President</option>
@@ -92,11 +92,15 @@
 									<label for="chair">Chair(s)</label>
 									<input type="text" name="chair" id="chair"/>
 								</div>
+								<div class="field">
+									<label for="bio">Bio</label>
+									<input type="text" name="bio" id="bio"/>
+								</div>
 								<div>
 									<label for="whichImage">Photo</label>
 									<select id="whichImage" name="whichImage">
-										<option value = "new">Use new image</option>
 										<option value = "old">Keep old image</option>
+										<option value = "new">Use new image</option>
 									</select> <br>
 									<input type="file" onchange="previewFile()" name="imageFile" id="imageFile" accept="image/*"><br>
 									<img src="" height="200" alt="Image preview..." id="imgPreview">

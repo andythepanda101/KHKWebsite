@@ -33,14 +33,15 @@ function make_member(jsonObj) {
   var major = jsonObj["major"];
   var chair = jsonObj["chair"];
   var image = jsonObj["image"];
-  var bio = jsonObj["bio"].replace(`"`,"").replace(`'`,"");
+  var bio = jsonObj["bio"]
+  if (bio) bio = bio.replace(`"`,"").replace(`'`,"");
 
   var section = document.createElement("section");
 
   var a = document.createElement("a");
   a.setAttribute("class", "image side");
   var img = document.createElement("img");
-  img.setAttribute("src", "images/khkpics/" + image + ".jpg");
+  img.setAttribute("src", "images/khkpics/" + image);
   a.append(img);
   section.append(a);
 

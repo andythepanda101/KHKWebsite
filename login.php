@@ -37,6 +37,7 @@
               $year = $_POST['year'];
               $major = $_POST['major'];
               $chair = $_POST['chair'];
+							$bio = $_POST['bio'];
               $image = $_POST['image'];
 							$whichImage = $_POST['whichImage'];
               $email = $_POST['email'];
@@ -60,11 +61,6 @@
 								        $uploadOk = 0;
 								    }
 								}
-								// Check file size
-								if ($_FILES["imageFile"]["size"] > 500000) {
-								    $errors .= "Error: your image file is too large.\n";
-								    $uploadOk = 0;
-								}
 								// Check if $uploadOk is set to 0 by an error
 								if ($uploadOk == 0) {
 								    $errors .= "Sorry, your photo was not uploaded due to a previous error.\n";
@@ -83,8 +79,8 @@
 							// Handle the email portion
 							if(empty($errors)) {
 								$to = $myemail;
-	              $email_subject = "KHK Website Request: $name";
-	              $email_body = "You have received a new reqest:\n\n".
+	              $email_subject = "KHK Website Change: $name";
+	              $email_body = "A change has been made to a members profile:\n\n".
 	              "{\n\"name\": \"$name\",\n".
 	              "  \"title\": \"$title\",\n".
 	              "  \"bn\": \"$bn\",\n".
@@ -92,12 +88,37 @@
 	              "  \"major\": \"$major\",\n".
 	              "  \"chair\": \"$chair\",\n".
 	              "  \"image\": \"$image\",\n".
-	              "  \"email\": \"$email\"\n".
+	              "  \"email\": \"$email\",\n".
+								"  \"bio\": \"$bio\"\n".
 	              "},";
 	              $headers = "From: $email\n";
 	              $headers .= "Reply-To: $email";
 	              $result = mail($to, $email_subject, $email_body, $headers);
 	              if($result){
+
+									//Try and auto update the json file for this person
+									$jsonString = file_get_contents('members.json');
+									$data = json_decode($jsonString, true);
+									$members = $data['members'];
+									foreach ($members as $key => $entry) {
+								    if ($entry['email'] == $email) {
+												$data['members'][$key]['name'] = $name;
+					              $data['members'][$key]['title'] = $title;
+					              $data['members'][$key]['bn'] = $bn;
+					              $data['members'][$key]['year'] = $year;
+					              $data['members'][$key]['major'] = $major;
+					              $data['members'][$key]['chair'] = $chair;
+					              $data['members'][$key]['image'] = $image;
+												$data['members'][$key]['bio'] = $bio;
+								    }
+									}
+									$newJsonString = json_encode($data);
+									if (false == file_put_contents('members.json', $newJsonString)) {
+										print_r(error_get_last());
+										echo "An internal error occured but a request was still sent\n";
+										file_put_contents('members.json', $jsonString);
+									}
+
 	                echo "Your request was sent successfully\n";
 	              }
 	              else {
