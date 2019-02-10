@@ -34,7 +34,7 @@ function make_member(jsonObj) {
   var chair = jsonObj["chair"];
   var image = jsonObj["image"];
   var bio = jsonObj["bio"]
-  if (bio) bio = bio.replace(`"`,"").replace(`'`,"");
+  if (bio) bio = bio.replace(/"/g, '\'');
 
   var section = document.createElement("section");
 
@@ -63,7 +63,7 @@ function make_member(jsonObj) {
 
   var button = document.createElement("a");
   button.setAttribute("class", "button scrolly");
-  button.setAttribute("onclick", "alert('" + bio + "')");
+  button.setAttribute("onclick", "alert(\"" + bio + "\")");
   button.innerText = "More";
   section.append(button);
 
