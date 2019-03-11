@@ -79,6 +79,8 @@ function previewFile(){
        var file    = document.getElementById('imageFile').files[0]; //sames as here
        var reader  = new FileReader();
 
+       document.getElementById('whichImage').selectedIndex = 1;
+
        reader.onloadend = function () {
            preview.src = reader.result;
        }
