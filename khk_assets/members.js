@@ -10,6 +10,7 @@ function load_members(filename, member_section, $) {
 
   var callback = function(data) {
     var members = JSON.parse(data.responseText);
+    // TODO: sort members by beta number and title first
     // for each member in the member array, make a member from them
     $.each(members["members"], function (i, val) {
       member_section.append(make_member(val));
