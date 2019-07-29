@@ -4,7 +4,7 @@ To test the site locally, go to the directory with a command line and type:
 
 `python -m http.server`
 
-This will only work if you have python3 installed. Then you should be able to access the website from `localhost:8080`
+This will only work if you have python3 installed. Then you should be able to access the website from `localhost:8080/`
 
 Theoretically the only thing that needs to change to maintain the website is two places:
 * members.json contains all of the info to populate the section showing all the members
