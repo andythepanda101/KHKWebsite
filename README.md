@@ -1,13 +1,13 @@
-Website for Beta chapter of Kappa Eta Kappa fraternity.
+#Website for Beta chapter of Kappa Eta Kappa fraternity.
 
 To test the site locally, go to the directory with a command line and type:
-		python -m http.server
+`python -m http.server`
 This will only work if you have python3 installed
 
 Theoretically the only thing that needs to change to maintain the website is two places:
-1. members.json contains all of the info to populate the section showing all the members
-2. login.js has a hard coded list of all the emails that are allowed to login
-3. login.php updates member profiles when they send requests. It can't add new members though
+* members.json contains all of the info to populate the section showing all the members
+* login.js has a hard coded list of all the emails that are allowed to login
+* login.php updates member profiles when they send requests. It can't add new members though
 
 Credits:
 
