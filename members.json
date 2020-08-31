@@ -1,26 +1,26 @@
 {
     "members": [
         {
-            "name": "Nathan DeLisle",
+            "name": "Gus Eggers",
             "title": "President",
-            "bn": "895",
+            "bn": "906",
             "year": "Junior",
-            "major": "Materials Science and Engineering",
-            "chair": "",
-            "image": "&Nathan.jpg",
-            "email": "delis020@umn.edu",
-            "bio": "I am from Appleton, Wisconsin and came to the University of Minnesota in the fall of 2016. I am majoring in Materials Science and Engineering and plan on minoring in Math. Starting in May 2018, I will be completing a two-semester co-op with Kimberly Clark where I will be assisting with various research projects. I love all things Wisconsin (Bucks, Packers, Brewers), except for the Badgers."
+            "major": "Computer Science",
+            "chair": "Pledge Chair, Little Sister",
+            "image": "&Gus.jpg",
+            "email": "egger235@umn.edu",
+            "bio": "thanks Devan"
         },
         {
-            "name": "Brandon Ung",
+            "name": "Jarod Koeppl",
             "title": "Vice President",
-            "bn": "905",
-            "year": "Sophomore",
-            "major": "Electrical Engineering",
-            "chair": "Social, Initiation",
-            "image": "prof.jpeg",
-            "email": "ung00001@umn.edu",
-            "bio": "I graduated from Mound Westonka High School in Mound, MN and joined KHK during my freshman year. I'm majoring in electrical engineering hoping to work with renewable energy or computer hardware. I run marathons, eat ice cream, etc."
+            "bn": "911",
+            "year": "Freshman",
+            "major": "",
+            "chair": "Initiation",
+            "image": "",
+            "email": "koepp058@umn.edu",
+            "bio": ""
         },
         {
             "name": "Taylor Kettering",
@@ -34,59 +34,26 @@
             "bio": "I'm from Eau Claire, WI, and I graduated from the very small Fall Creek High School. I rushed KHK in the fall of my freshman year and it was the best decision I've ever made. In my free time I enjoy being outdoors and playing volleyball."
         },
         {
-            "name": "Devon Tuma",
+            "name": "Governess Simpson",
             "title": "Secretary",
-            "bn": "899",
-            "year": "Senior",
-            "major": "Mathematics",
-            "chair": "Webmaster, CPU, Initiation",
-            "image": "&Devon.jpg",
-            "email": "tumax040@umn.edu",
-            "bio": "Loving the weather today dude"
+            "bn": "910",
+            "year": "Junior",
+            "major": "Industrial and Systems Engineering",
+            "chair": "Rush, Historian, Webmaster",
+            "image": "2798009087916523508.jpg",
+            "email": "simps422@umn.edu",
+            "bio": "I'm from Maplewood, Minnesota, and I came to the University of Minnesota in Fall 2017. I'm interested in pursuing a career that combines both my passion for technology and business/administration. I'm heavily involved in many student groups and organizations, such as the Minnesota Student Association, Atland Ventures, and the National Organization for Business and Engineering. In my free time, I enjoy powerlifting, reading, and programming.."
         },
         {
-            "name": "Mehraud Razzaghi",
+            "name": "Nathan DeLisle",
             "title": "",
-            "bn": "891",
-            "year": "Senior",
-            "major": "Chemical Engineering",
-            "chair": "President",
-            "image": "&Mehraud.jpg",
-            "email": "razza014@umn.edu",
-            "bio": "Raised in Colorado, I moved out to Minnesota without knowing a single person here. Soon enough, I found myself to be part of KHK. I enjoy playing soccer, and I know how to knit. Hopefully I will graduate in 2020 as a chemical engineer, as long as I'm not too busy taking naps or practicing foosball."
-        },
-        {
-            "name": "Edward Hoey",
-            "title": "",
-            "bn": "892",
-            "year": "Senior",
-            "major": "Chemistry",
-            "chair": "Secretary, Rush",
-            "image": "&Edward.jpg",
-            "email": "hoeyx023@umn.edu",
-            "bio": "I'm from Eagan, MN. I joined KHK in the fall of my first semester here at the U. Currently in school in hopes of being in school for another 4 years to pursue a doctoral degree in pharmacy.  In my free time I enjoy music,  thrift shopping,  and enjoying the nature. "
-        },
-        {
-            "name": "Samuel Gagnon",
-            "title": "",
-            "bn": "894",
-            "year": "Senior",
-            "major": "Black Magic",
-            "chair": "House Manager, Social",
-            "image": "&Samuel.jpg",
-            "email": "gagno094@umn.edu",
-            "bio": "your Bio"
-        },
-        {
-            "name": "Samuel Swanson",
-            "title": "",
-            "bn": "897",
-            "year": "Senior",
-            "major": "Computer Engineering",
-            "chair": "Social, Little Sister ",
-            "image": "&Goose.jpg",
-            "email": "swan2204@umn.edu",
-            "bio": "I grew up in New Brighton, Minnesota and after graduating from Cretin-Derham Hall; I followed in the tradition set by aunts and uncles on both sides of my family to attend the University of Minnesota for Engineering. In my free time I enjoy alpine skiing, whitewater kayaking, reading, and messing with computers. "
+            "bn": "895",
+            "year": "Junior",
+            "major": "Materials Science and Engineering",
+            "chair": "",
+            "image": "&Nathan.jpg",
+            "email": "delis020@umn.edu",
+            "bio": "I am from Appleton, Wisconsin and came to the University of Minnesota in the fall of 2016. I am majoring in Materials Science and Engineering and plan on minoring in Math. Starting in May 2018, I will be completing a two-semester co-op with Kimberly Clark where I will be assisting with various research projects. I love all things Wisconsin (Bucks, Packers, Brewers), except for the Badgers."
         },
         {
             "name": "Benjamin DeStefanis",
@@ -100,25 +67,15 @@
             "bio": "I am from Menomonee Falls, WI and graduated from Marquette University High School before coming to the University of Minnesota. I like to play golf and watch the Packers, Brewers and Bucks in my free time. "
         },
         {
-            "name": "Bobby Hahn",
+            "name": "Brandon Ung",
             "title": "",
-            "bn": "902",
-            "year": "Senior",
-            "major": "Mathematics",
-            "chair": "Pledge",
-            "image": "&Bobby2.jpg",
-            "email": "hahnx302@umn.edu"
-        },
-        {
-            "name": "Gus Eggers",
-            "title": "",
-            "bn": "906",
-            "year": "Junior",
-            "major": "Computer Science",
-            "chair": "Pledge Chair, Little Sister",
-            "image": "&Gus.jpg",
-            "email": "egger235@umn.edu",
-            "bio": "thanks Devan"
+            "bn": "905",
+            "year": "Sophomore",
+            "major": "Electrical Engineering",
+            "chair": "Social, Initiation",
+            "image": "prof.jpeg",
+            "email": "ung00001@umn.edu",
+            "bio": "I graduated from Mound Westonka High School in Mound, MN and joined KHK during my freshman year. I'm majoring in electrical engineering hoping to work with renewable energy or computer hardware. I run marathons, eat ice cream, etc."
         },
         {
             "name": "Sam Weis",
@@ -152,28 +109,6 @@
             "image": "Screenshot_20190522-182449_Gallery.jpg",
             "email": "meeha108@umn.edu",
             "bio": "If you or a loved one has been diagnosed with Mesothelioma you may to be entitled to financial compensation. Mesothelioma is a rare cancer linked to asbestos exposure. Exposure to asbestos in they Navy, shipyards, mills, heating, construction or the automotive industries may put you at risk. Please don't wait, call 1-800-99 LAW USA today for a free legal consultation and financial information packet. Mesothelioma patients call now! 1-800-99 LAW USA "
-        },
-        {
-            "name": "Governess Simpson",
-            "title": "",
-            "bn": "910",
-            "year": "Junior",
-            "major": "Industrial and Systems Engineering",
-            "chair": "Rush, Historian, Webmaster",
-            "image": "2798009087916523508.jpg",
-            "email": "simps422@umn.edu",
-            "bio": "I'm from Maplewood, Minnesota, and I came to the University of Minnesota in Fall 2017. I'm interested in pursuing a career that combines both my passion for technology and business/administration. I'm heavily involved in many student groups and organizations, such as the Minnesota Student Association, Atland Ventures, and the National Organization for Business and Engineering. In my free time, I enjoy powerlifting, reading, and programming.."
-        },
-        {
-            "name": "Jarod Koeppl",
-            "title": "",
-            "bn": "911",
-            "year": "Freshman",
-            "major": "",
-            "chair": "Initiation",
-            "image": "",
-            "email": "koepp058@umn.edu",
-            "bio": ""
         },
         {
             "name": "Dalacie Singh",
