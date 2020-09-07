@@ -102,8 +102,10 @@
 									$jsonString = file_get_contents('members.json');
 									$data = json_decode($jsonString, true);
 									$members = $data['members'];
+									$found = false;
 									foreach ($members as $key => $entry) {
 								    if ($entry['email'] == $email) {
+												$found = true;
 												$data['members'][$key]['name'] = $name;
 					              $data['members'][$key]['title'] = $title;
 					              $data['members'][$key]['bn'] = $bn;
@@ -115,7 +117,7 @@
 								    }
 									}
 									$newJsonString = json_encode($data);
-									if (false == file_put_contents('members.json', $newJsonString)) {
+									if ($found && false == file_put_contents('members.json', $newJsonString)) {
 										print_r(error_get_last());
 										echo "An internal error occured but a request was still sent\n";
 										file_put_contents('members.json', $jsonString);
