@@ -30,7 +30,7 @@
             <?php
               $errors = '';
               $myemail = 'khk@umn.edu';
-							$ccemail = 'tumax040@umn.edu, kette061@umn.edu, delis020@umn.edu, ung00001@umn.edu';
+							$ccemail = 'simps422@umn.edu, kette061@umn.edu, eggers235@umn.edu, koepp058@umn.edu, tumax040@umn.edu';
               if(empty($_POST['name'])  || empty($_POST['email']) || !empty($_POST['honey'])) {
                 $errors .= "\n Error: all fields are required";
               }
