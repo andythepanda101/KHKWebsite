@@ -57,7 +57,7 @@
                 "Email: $email_address\n Message \n $message";
                 $headers = "From: $myemail\n";
                 $headers .= "Reply-To: $email_address\n";
-								$headers .= "Cc: $ccemail$";
+		$headers .= "Cc: $ccemail";
                 $result = mail($to,$email_subject,$email_body,$headers);
                 if($result){
                   echo "Your message was sent successfully";
