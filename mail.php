@@ -30,7 +30,7 @@
             <?php
               $errors = '';
               $myemail = 'khk@umn.edu';
-							$ccemail = 'tumax040@umn.edu, kette061@umn.edu, delis020@umn.edu, ung00001@umn.edu';
+							$ccemail = 'simps422@umn.edu, kette061@umn.edu, eggers235@umn.edu, koepp058@umn.edu, tumax040@umn.edu';
               if(empty($_POST['name'])  || empty($_POST['email']) || !empty($_POST['honey'])) {
                 $errors .= "\n Error: all fields are required";
               }
@@ -57,7 +57,7 @@
                 "Email: $email_address\n Message \n $message";
                 $headers = "From: $myemail\n";
                 $headers .= "Reply-To: $email_address\n";
-								$headers .= "Cc: $ccemail$";
+		$headers .= "Cc: $ccemail";
                 $result = mail($to,$email_subject,$email_body,$headers);
                 if($result){
                   echo "Your message was sent successfully";

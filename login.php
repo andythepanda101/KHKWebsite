@@ -30,7 +30,8 @@
             <?php
 							ini_set('display_errors', 'on');
 
-              $myemail = 'tumax040@umn.edu';
+			  $myemail = 'simps422@umn.edu';
+			  $ccemail = 'tumax040@umn.edu';
               $name = $_POST['name'];
               $title = $_POST['title'];
               $bn = $_POST['beta_number'];
@@ -92,7 +93,8 @@
 								"  \"bio\": \"$bio\"\n".
 	              "},";
 	              $headers = "From: $email\n";
-	              $headers .= "Reply-To: $email";
+				  $headers .= "Reply-To: $email";
+				  $headers .= "Cc: $ccemail$";
 	              $result = mail($to, $email_subject, $email_body, $headers);
 	              if($result){
 
@@ -100,8 +102,10 @@
 									$jsonString = file_get_contents('members.json');
 									$data = json_decode($jsonString, true);
 									$members = $data['members'];
+									$found = false;
 									foreach ($members as $key => $entry) {
 								    if ($entry['email'] == $email) {
+												$found = true;
 												$data['members'][$key]['name'] = $name;
 					              $data['members'][$key]['title'] = $title;
 					              $data['members'][$key]['bn'] = $bn;
@@ -113,7 +117,7 @@
 								    }
 									}
 									$newJsonString = json_encode($data);
-									if (false == file_put_contents('members.json', $newJsonString)) {
+									if ($found && false == file_put_contents('members.json', $newJsonString)) {
 										print_r(error_get_last());
 										echo "An internal error occured but a request was still sent\n";
 										file_put_contents('members.json', $jsonString);
