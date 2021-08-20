@@ -30,8 +30,8 @@
             <?php
 							ini_set('display_errors', 'on');
 
-			  $myemail = 'simps422@umn.edu';
-			  $ccemail = 'tumax040@umn.edu';
+			  $myemail = 'chen6640@umn.edu';
+			  $ccemail = 'tumax040@umn.edu, simps422@umn.edu';
               $name = $_POST['name'];
               $title = $_POST['title'];
               $bn = $_POST['beta_number'];
