@@ -30,8 +30,8 @@
             <?php
 							ini_set('display_errors', 'on');
 
-			  $myemail = 'chen6640@umn.edu';
-			  $ccemail = 'tumax040@umn.edu, simps422@umn.edu';
+			  			$myemail = 'chen6640@umn.edu';
+			  			$ccemail = 'tumax040@umn.edu, simps422@umn.edu';
               $name = $_POST['name'];
               $title = $_POST['title'];
               $bn = $_POST['beta_number'];
@@ -92,9 +92,9 @@
 	              "  \"email\": \"$email\",\n".
 								"  \"bio\": \"$bio\"\n".
 	              "},";
-	              $headers = "From: $email\n";
-				  $headers .= "Reply-To: $email";
-				  $headers .= "Cc: $ccemail$";
+	              $headers = "From: $email\r\n";
+				  			$headers .= "Reply-To: $email\r\n";
+				  			$headers .= "Cc: $ccemail";
 	              $result = mail($to, $email_subject, $email_body, $headers);
 	              if($result){
 
