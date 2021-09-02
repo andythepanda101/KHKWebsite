@@ -81,7 +81,6 @@
 							if(empty($errors)) {
 								$to = $myemail;
 	              $email_subject = "KHK Website Change: $name";
-								/*
 	              $email_body = "A change has been made to a members profile:\n\n".
 	              "{\n\"name\": \"$name\",\n".
 	              "  \"title\": \"$title\",\n".
@@ -93,8 +92,6 @@
 	              "  \"email\": \"$email\",\n".
 								"  \"bio\": \"$bio\"\n".
 	              "},";
-								*/
-								$email_body = "Testing to see if message body is what is causing this headache";
 	              $headers = "From: $email\r\n";
 				  			$headers .= "Reply-To: $email\r\n";
 				  			$headers .= "Cc: $ccemail";
