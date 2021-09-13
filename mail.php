@@ -57,10 +57,11 @@
                 "Email: $email_address\n Message \n $message";
                 $headers = "From: $myemail\n";
                 $headers .= "Reply-To: $email_address\n";
-		$headers .= "Cc: $ccemail";
+				$headers .= "Cc: $ccemail";
                 $result = mail($to,$email_subject,$email_body,$headers);
                 if($result){
-                  echo "Your message was sent successfully";
+                  // echo "Your message was sent successfully"
+				  echo("There's something wrong with the mail automation. Please email khk@umn.edu directly to contact us");
                 }
                 else {
                   echo "Error: Your message could not be sent due to a server error";
