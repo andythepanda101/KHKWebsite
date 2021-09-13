@@ -30,7 +30,7 @@
             <?php
               $errors = '';
               $myemail = 'khk@umn.edu';
-							$ccemail = 'chen6640@umn.edu, kette061@umn.edu, dasgu058@umn.edu, koepp058@umn.edu, singh829@umn.edu';
+			  $ccemail = 'chen6640@umn.edu, kette061@umn.edu, dasgu058@umn.edu, koepp058@umn.edu, singh829@umn.edu';
               if(empty($_POST['name'])  || empty($_POST['email']) || !empty($_POST['honey'])) {
                 $errors .= "\n Error: all fields are required";
               }
@@ -61,7 +61,7 @@
                 $result = mail($to,$email_subject,$email_body,$headers);
                 if($result){
                   // echo "Your message was sent successfully"
-				  echo("There's something wrong with the mail automation. Please email khk@umn.edu directly to contact us");
+				  echo("There's something wrong with the mail automation and your message may not have been sent. Please email khk@umn.edu directly to contact us");
                 }
                 else {
                   echo "Error: Your message could not be sent due to a server error";
