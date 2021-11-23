@@ -17,7 +17,6 @@ function onSignIn(googleUser) {
 }
 
 function validate_email(email) {
-<<<<<<< HEAD
   var khk_emails = ['razza014@umn.edu', 'deste017@umn.edu', 'renko001@umn.edu',
     'hoeyx023@umn.edu', 'kress040@umn.edu', 'voxxx214@umn.edu', 'spenc471@umn.edu',
     'zofki002@umn.edu', 'kneev001@umn.edu', 'falkx190@umn.edu', 'leuwe003@umn.edu',
@@ -28,12 +27,6 @@ function validate_email(email) {
     'koepp058@umn.edu', 'koch0299@umn.edu', 'molen042@umn.edu', 'singh829@umn.edu', 
     'sand1294@umn.edu', 'dasgu058@umn.edu', 'chen6640@umn.edu', 'schli376@umn.edu',
     'weiss518@umn.edu', 'luukk021@umn.edu', 'serie014@umn.edu'];
-=======
-  var khk_emails = ['deste017@umn.edu', 'delis020@umn.edu', 'tumax040@umn.edu',
-    'egger235@umn.edu', 'ung00001@umn.edu', 'kette061@umn.edu',
-    'ahuja028@umn.edu', 'meeha108@umn.edu', 'simps422@umn.edu',
-    'koepp058@umn.edu', 'koch0299@umn.edu', 'molen042@umn.edu', 'singh829@umn.edu'];
->>>>>>> 0bc594daf6da894365045bb437f72790bc508dae
   return khk_emails.includes(email);
 }
 
