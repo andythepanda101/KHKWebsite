@@ -26,7 +26,8 @@ function validate_email(email) {
     'ahuja028@umn.edu', 'broga017@umn.edu', 'meeha108@umn.edu', 'simps422@umn.edu',
     'koepp058@umn.edu', 'koch0299@umn.edu', 'molen042@umn.edu', 'singh829@umn.edu', 
     'sand1294@umn.edu', 'dasgu058@umn.edu', 'chen6640@umn.edu', 'schli376@umn.edu',
-    'weiss518@umn.edu', 'luukk021@umn.edu', 'serie014@umn.edu'];
+    'weiss518@umn.edu', 'luukk021@umn.edu', 'serie014@umn.edu', 'hemsc003@umn.edu',
+    'bowen298@umn.edu', 'truel021@umn.edu', 'pandy057@umn.edu', 'chen7381@umn.edu'];
   return khk_emails.includes(email);
 }
 

@@ -32,17 +32,17 @@
 
 			  			$myemail = 'chen6640@umn.edu';
 			  			$ccemail = 'tumax040@umn.edu, simps422@umn.edu';
-              $name = $_POST['name'];
-              $title = $_POST['title'];
-              $bn = $_POST['beta_number'];
-              $year = $_POST['year'];
-              $major = $_POST['major'];
-              $chair = $_POST['chair'];
-							$bio = $_POST['bio'];
-              $image = $_POST['image'];
-							$whichImage = $_POST['whichImage'];
-              $email = $_POST['email'];
-							$errors = '';
+              			$name = $_POST['name'];
+             			$title = $_POST['title'];
+              			$bn = $_POST['beta_number'];
+              			$year = $_POST['year'];
+              			$major = $_POST['major'];
+              			$chair = $_POST['chair'];
+						$bio = $_POST['bio'];
+              			$image = $_POST['image'];
+						$whichImage = $_POST['whichImage'];
+              			$email = $_POST['email'];
+						$errors = '';
 
 
 							// Handle the image upload portion
@@ -80,26 +80,26 @@
 							// Handle the email portion
 							if(empty($errors)) {
 								$to = $myemail;
-	              $email_subject = "KHK Website Change: $name";
-								/*
-	              $email_body = "A change has been made to a members profile:\n\n".
-	              "{\n\"name\": \"$name\",\n".
-	              "  \"title\": \"$title\",\n".
-	              "  \"bn\": \"$bn\",\n".
-	              "  \"year\": \"$year\",\n".
-	              "  \"major\": \"$major\",\n".
-	              "  \"chair\": \"$chair\",\n".
-	              "  \"image\": \"$image\",\n".
-	              "  \"email\": \"$email\",\n".
+	              				$email_subject = "KHK Website Change: $name";
+								
+								$email_body = "A change has been made to a members profile:\n\n".
+								"{\n\"name\": \"$name\",\n".
+								"  \"title\": \"$title\",\n".
+								"  \"bn\": \"$bn\",\n".
+								"  \"year\": \"$year\",\n".
+								"  \"major\": \"$major\",\n".
+								"  \"chair\": \"$chair\",\n".
+								"  \"image\": \"$image\",\n".
+								"  \"email\": \"$email\",\n".
 								"  \"bio\": \"$bio\"\n".
-	              "},";
-								*/
-								$email_body = "Testing to see if message body is what is causing this headache";
-	              $headers = "From: $email\r\n";
+								"},";
+								
+								/*$email_body = "Testing to see if message body is what is causing this headache";*/
+	              			$headers = "From: $email\r\n";
 				  			$headers .= "Reply-To: $email\r\n";
 				  			$headers .= "Cc: $ccemail";
-	              $result = mail($to, $email_subject, $email_body, $headers);
-	              if($result){
+	              			$result = mail($to, $email_subject, $email_body, $headers);
+	              			if($result){
 
 									//Try and auto update the json file for this person
 									$jsonString = file_get_contents('members.json');
@@ -107,17 +107,17 @@
 									$members = $data['members'];
 									$found = false;
 									foreach ($members as $key => $entry) {
-								    if ($entry['email'] == $email) {
-												$found = true;
-												$data['members'][$key]['name'] = $name;
-					              $data['members'][$key]['title'] = $title;
-					              $data['members'][$key]['bn'] = $bn;
-					              $data['members'][$key]['year'] = $year;
-					              $data['members'][$key]['major'] = $major;
-					              $data['members'][$key]['chair'] = $chair;
-					              $data['members'][$key]['image'] = $image;
-												$data['members'][$key]['bio'] = $bio;
-								    }
+										if ($entry['email'] == $email) {
+											$found = true;
+											$data['members'][$key]['name'] = $name;
+											$data['members'][$key]['title'] = $title;
+											$data['members'][$key]['bn'] = $bn;
+											$data['members'][$key]['year'] = $year;
+											$data['members'][$key]['major'] = $major;
+											$data['members'][$key]['chair'] = $chair;
+											$data['members'][$key]['image'] = $image;
+											$data['members'][$key]['bio'] = $bio;
+										}
 									}
 									$newJsonString = json_encode($data);
 									if ($found && false == file_put_contents('members.json', $newJsonString)) {
