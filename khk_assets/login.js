@@ -74,7 +74,8 @@ function populate_input(val) {
   $("#major").val(val["major"]);
   $("#chair").val(val["chair"]);
   $("#image").val(val["image"]);
-  $("#email").val(val["email"]);
+  //$("#email").val(val["email"]); // default should be keep old image
+  $("#email").val("Keep old image");
   $("#bio").val(val["bio"]);
 }
 
