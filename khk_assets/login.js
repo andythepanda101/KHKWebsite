@@ -2,6 +2,7 @@ function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
   document.getElementById("sign_out").style.display = "";
   if (validate_email(profile.getEmail())) {
+    document.getElementById("bad_email").style.display = "none";
     document.getElementById("edit_member").style.display = "";
     if (document.getElementById("error_msg")) {
       document.getElementById("error_msg").style.display = "none";
