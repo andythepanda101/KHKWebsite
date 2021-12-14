@@ -24,39 +24,37 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper">
-
 				<!-- Main -->
 					<section id="main" class="wrapper">
-            <?php
-						ini_set('display_errors', 'on');
-						// helper debug function that'll print to console
-						function debug_to_console($data) {
-							$output = $data;
-							if (is_array($output))
-								$output = implode(',', $output);
-						
-							//echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
-							echo // debug
-								"<div display='none'>
-									<script type='text/javascript'>
-										console.log('$output');
-									</script>
-								</div>";
-						}
-			  			$myemail = 'chen6640@umn.edu';
-			  			$ccemail = 'tumax040@umn.edu, simps422@umn.edu';
-              			$name = $_POST['name'];
-             			$title = $_POST['title'];
-              			$bn = $_POST['beta_number'];
-              			$year = $_POST['year'];
-              			$major = $_POST['major'];
-              			$chair = $_POST['chair'];
-						$bio = $_POST['bio'];
-              			$image = $_POST['image'];
-						$whichImage = $_POST['whichImage'];
-              			$email = $_POST['email'];
-						$errors = '';
-
+            			<?php
+							ini_set('display_errors', 'on');
+							// helper debug function that'll print to console
+							function debug_to_console($data) {
+								$output = $data;
+								if (is_array($output))
+									$output = implode(',', $output);
+							
+								//echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
+								// hidden HTML for logging to console
+								echo "<div display='none'> 
+										<script type='text/javascript'>
+											console.log('$output');
+										</script>
+									</div>";
+							}
+							$myemail = 'chen6640@umn.edu';
+							$ccemail = 'tumax040@umn.edu, simps422@umn.edu';
+							$name = $_POST['name'];
+							$title = $_POST['title'];
+							$bn = $_POST['beta_number'];
+							$year = $_POST['year'];
+							$major = $_POST['major'];
+							$chair = $_POST['chair'];
+							$bio = $_POST['bio'];
+							$image = $_POST['image'];
+							$whichImage = $_POST['whichImage'];
+							$email = $_POST['email'];
+							$errors = '';
 
 							// Handle the image upload portion
 							if (($whichImage == 'new') && count($_FILES['imageFile']['tmp_name']) > 0) {
@@ -108,11 +106,11 @@
 								"},";
 								
 								/*$email_body = "Testing to see if message body is what is causing this headache";*/
-	              			$headers = "From: $email\r\n";
-				  			$headers .= "Reply-To: $email\r\n";
-				  			$headers .= "Cc: $ccemail";
-	              			$result = mail($to, $email_subject, $email_body, $headers);
-	              			if($result){
+								$headers = "From: $email\r\n";
+								$headers .= "Reply-To: $email\r\n";
+								$headers .= "Cc: $ccemail";
+								$result = mail($to, $email_subject, $email_body, $headers);
+								if($result){
 									// print("mailed requests successful"); // debug
 									//Try and auto update the json file for this person
 									$jsonString = file_get_contents('members.json');
@@ -140,20 +138,24 @@
 										file_put_contents('members.json', $jsonString);
 									}
 
-	                echo "Your request was sent successfully\n";
-	              }
-	              else {
-	                echo "Error: Your message could not be sent due to a server error\n";
-	              }
-							}
+									echo "Your request was sent successfully.\n\n
+										----- IMPORTANT -----\n
+										The website should be automatically updated to show your updated information.\n
+										If your changes aren't present, please clear your browser's cookies/cache then reload the page.\n
+										If they're still not visble, then let Andy know.\n"
+
+	              				} 
+								else {
+	                				echo "Error: Your message could not be sent due to a server error\n";
+	              				}
+							} 
 							else {
 								echo "\n\n" . $errors;
 							}
-            ?>
+							// end PHP
+           				 ?> 
 					</section>
-
 			</div>
-
 		<!-- Footer -->
 			<footer id="footer" class="wrapper alt">
 				<div class="inner">
