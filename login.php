@@ -28,8 +28,21 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
             <?php
-							ini_set('display_errors', 'on');
-
+						ini_set('display_errors', 'on');
+						// helper debug function that'll print to console
+						function debug_to_console($data) {
+							$output = $data;
+							if (is_array($output))
+								$output = implode(',', $output);
+						
+							//echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
+							echo // debug
+								"<div display='none'>
+									<script type='text/javascript'>
+										console.log('$output');
+									</script>
+								</div>";
+						}
 			  			$myemail = 'chen6640@umn.edu';
 			  			$ccemail = 'tumax040@umn.edu, simps422@umn.edu';
               			$name = $_POST['name'];
@@ -100,7 +113,7 @@
 				  			$headers .= "Cc: $ccemail";
 	              			$result = mail($to, $email_subject, $email_body, $headers);
 	              			if($result){
-
+									// print("mailed requests successful"); // debug
 									//Try and auto update the json file for this person
 									$jsonString = file_get_contents('members.json');
 									$data = json_decode($jsonString, true);
@@ -108,6 +121,7 @@
 									$found = false;
 									foreach ($members as $key => $entry) {
 										if ($entry['email'] == $email) {
+											debug_to_console("email found in members.json");
 											$found = true;
 											$data['members'][$key]['name'] = $name;
 											$data['members'][$key]['title'] = $title;

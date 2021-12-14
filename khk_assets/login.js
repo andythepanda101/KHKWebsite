@@ -67,6 +67,7 @@ function lookup_member(email) {
 }
 
 function populate_input(val) {
+  console.log("populating input"); // debug
   var $ = jQuery;
   $("#name").val(val["name"]);
   $("#title").val(val["title"]);
@@ -75,8 +76,7 @@ function populate_input(val) {
   $("#major").val(val["major"]);
   $("#chair").val(val["chair"]);
   $("#image").val(val["image"]);
-  //$("#email").val(val["email"]); // default should be keep old image
-  $("#email").val("Keep old image");
+  $("#email").val(val["email"]);
   $("#bio").val(val["bio"]);
 }
 
