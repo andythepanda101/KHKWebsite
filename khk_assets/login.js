@@ -1,7 +1,8 @@
+// when a user successfully signs in with a Google account
 function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
   document.getElementById("sign_out").style.display = "";
-  if (validate_email(profile.getEmail())) {
+  if (validate_email(profile.getEmail())) { // check if KHK member
     document.getElementById("bad_email").style.display = "none";
     document.getElementById("edit_member").style.display = "";
     if (document.getElementById("error_msg")) {
@@ -17,6 +18,7 @@ function onSignIn(googleUser) {
   }
 }
 
+// validate Google user with list of KHK member's x500's
 function validate_email(email) {
   var khk_emails = ['razza014@umn.edu', 'deste017@umn.edu', 'renko001@umn.edu',
     'hoeyx023@umn.edu', 'kress040@umn.edu', 'voxxx214@umn.edu', 'spenc471@umn.edu',
@@ -32,6 +34,7 @@ function validate_email(email) {
   return khk_emails.includes(email);
 }
 
+// when signout button is clicked
 function signOut() {
   var auth2 = gapi.auth2.getAuthInstance();
   auth2.signOut();
@@ -66,6 +69,7 @@ function lookup_member(email) {
   });
 }
 
+// fills form with existing values
 function populate_input(val) {
   console.log("populating input"); // debug
   var $ = jQuery;
@@ -80,6 +84,7 @@ function populate_input(val) {
   $("#bio").val(val["bio"]);
 }
 
+// handles the file uploading
 function previewFile(){
        var preview = document.getElementById('imgPreview'); //selects the query named img
        var file    = document.getElementById('imageFile').files[0]; //sames as here
