@@ -76,8 +76,8 @@
 								// Check if $uploadOk is set to 0 by an error
 								if ($uploadOk == 0) {
 								    $errors .= "Sorry, your photo was not uploaded due to a previous error.\n";
-							  }
-							  else {
+								}
+							    else {
 									if (move_uploaded_file($_FILES["imageFile"]["tmp_name"], $target_file)) {
 											echo "The file ". basename( $_FILES["imageFile"]["name"]). " has been uploaded.\n";
 									} else {
