@@ -35,8 +35,8 @@
 									$output = implode(',', $output);
 							
 								//echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
-								// hidden HTML for logging to console
-								echo "<div display='none'> 
+								echo // debug
+									"<div display='none'>
 										<script type='text/javascript'>
 											console.log('$output');
 										</script>
@@ -110,8 +110,9 @@
 								$headers .= "Reply-To: $email\r\n";
 								$headers .= "Cc: $ccemail";
 								$result = mail($to, $email_subject, $email_body, $headers);
+
 								if($result){
-									// print("mailed requests successful"); // debug
+									debug_to_console("email for member profile change sent");
 									//Try and auto update the json file for this person
 									$jsonString = file_get_contents('members.json');
 									$data = json_decode($jsonString, true);
@@ -119,7 +120,6 @@
 									$found = false;
 									foreach ($members as $key => $entry) {
 										if ($entry['email'] == $email) {
-											debug_to_console("email found in members.json");
 											$found = true;
 											$data['members'][$key]['name'] = $name;
 											$data['members'][$key]['title'] = $title;
@@ -129,31 +129,34 @@
 											$data['members'][$key]['chair'] = $chair;
 											$data['members'][$key]['image'] = $image;
 											$data['members'][$key]['bio'] = $bio;
+											debug_to_console("email found in members.json");
+											// TODO: eventually, user's cache should be cleared to show updated info
 										}
 									}
 									$newJsonString = json_encode($data);
+									// if member email found but adding updated info to members.json fails
 									if ($found && false == file_put_contents('members.json', $newJsonString)) {
 										print_r(error_get_last());
 										echo "An internal error occured but a request was still sent\n";
 										file_put_contents('members.json', $jsonString);
 									}
 
-									echo "Your request was sent successfully.\n\n
-										----- IMPORTANT -----\n
-										The website should be automatically updated to show your updated information.\n
-										If your changes aren't present, please clear your browser's cookies/cache then reload the page.\n
-										If they're still not visble, then let Andy know.\n"
-
-	              				} 
+									echo "Your request was sent successfully<br><br>
+									
+										---------- IMPORTANT ----------<br>
+										The site should automatically update with your changes.<br>
+										If you don't see your changes, please clear your browser's cache then refresh the page.<br>
+										If after that changes are still not visible, then contact Andy.<br>";
+								
+								}
 								else {
-	                				echo "Error: Your message could not be sent due to a server error\n";
-	              				}
-							} 
+									echo "Error: Your message could not be sent due to a server error\n";
+								}
+							}
 							else {
 								echo "\n\n" . $errors;
 							}
-							// end PHP
-           				 ?> 
+            			?>
 					</section>
 			</div>
 		<!-- Footer -->
