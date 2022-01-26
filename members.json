@@ -1,1 +1,213 @@
-{"members":[{"name":"Jarod Koeppl","title":"President","bn":"911","year":"Junior","major":"Computer Science","chair":"Composite Duty","image":"&Jarod.jpg","email":"koepp058@umn.edu","bio":"thanks Andy"},{"name":"Adrika Dasgupta","title":"Vice President","bn":"917","year":"Sophomore","major":"Computer Science","chair":"Rush, CSE Outreach","image":"&Adrika.png","email":"dasgu058@umn.edu","bio":"I'm from Maple Grove, MN, and graduated from Wayzata High School in 2020 before coming to the U of M. I am currently studying Computer Science and am a Systems IT Intern at Great River Energy. In my free time, I like to have fun outside, sing, and try to cook\/bake new recipes."},{"name":"Taylor Kettering","title":"Treasurer","bn":"904","year":"Senior","major":"Chemical Engineering","chair":"Pledge, Librarian, Influencer","image":"IMG_3430.jpg","email":"kette061@umn.edu","bio":"I'm from Eau Claire, WI, and I graduated from the very small Fall Creek High School. I rushed KHK in the fall of my freshman year and it was the best decision I've ever made. In my free time I enjoy being outdoors and playing volleyball."},{"name":"Dalacie Singh","title":"Secretary","bn":"912","year":"Senior","major":"Industrial and Systems Engineering","chair":"Rush, Propaganda, Little Sister","image":"&Dalacie.jpg","email":"singh829@umn.edu","bio":"I'm from the tiny town Armstrong, IL. I rushed KHK in the fall semester of my sophomore year and just the thought that I could have missed becoming a part of this amazing community breaks my heart. In my free time I love to create arts and crafts, read, and bake anything I can think of! "},{"name":"Vaibhav Ahuja","title":"","bn":"908","year":"Senior","major":"Biomedical Engineering \/ Math","chair":"Propaganda, CSE Outreach","image":"&Vdawg.png","email":"ahuja029@umn.edu","bio":""},{"name":"Governess Simpson","title":"","bn":"910","year":"Senior","major":"Industrial and Systems Engineering","chair":"Historian","image":"&Governess.jpg","email":"simps422@umn.edu","bio":"I'm from Maplewood, Minnesota, and I came to the University of Minnesota in Fall 2017. I'm interested in pursuing a career that combines both my passion for technology and business\/administration. I'm heavily involved in many student groups and organizations, such as the Minnesota Student Association, Atland Ventures, and the National Organization for Business and Engineering. In my free time, I enjoy powerlifting, reading, and programming.."},{"name":"Benjamin Koch","title":"","bn":"913","year":"Junior","major":"Chemical Engineering","chair":"Social, Pledge, Little Sister","image":"&Ben.png","email":"koch0299@umn.edu","bio":"thanks Andy"},{"name":"Daniel Molenaar","title":"","bn":"914","year":"Junior","major":"Physics","chair":"Social, Historian, House Manager","image":"&Daniel.jpg","email":"molen042@umn.edu","bio":"thanks Andy"},{"name":"Andy Chen","title":"","bn":"915","year":"Junior","major":"Computer Science","chair":"Pledge, Webmaster","image":"image2.png","email":"chen6640@umn.edu","bio":"I am a fork in the soup of life"},{"name":"Matthew Schlicht","title":"","bn":"916","year":"Sophomore","major":"Mechanical Engineering","chair":"Social, Athletics","image":"&Matt.jpg","email":"schli376@umn.edu","bio":"I was raised in Appleton, WI where I attended high school. I am currently studying mechanical engineering and one of the students working on getting an electric UMN motorsports team off the ground. In my free time I play guitar, write comedy, and watch the Packers."},{"name":"Elizabeth Sand","title":"","bn":"918","year":"Sophomore","major":"Architecture","chair":"Rush, Propaganda, Influencer","image":"&Ellie.jpg","email":"sand1294@umn.edu","bio":"I'm from Woodstock, Maryland and went to Marriotts Ridge High School. I am originally from Chicago and love all of their sports teams. I\u2019m studying Interior Design and want to work with CAD in the future. I enjoy reading, crafting, and skiing in my free time!"},{"name":"Jack Luukkonen","title":"","bn":"919","year":"Junior","major":"Electrical Engineering","chair":"Initiation, Little Sister","image":"senior_pic.jpg","email":"luukk021@umn.edu","bio":"Remember, licking doorknobs is illegal on other planets."},{"name":"Andrew Weiss","title":"","bn":"920","year":"Junior","major":"Computer Science","chair":"Initiation, House Manager","image":"&Andrew.jpg","email":"weiss518@umn.edu","bio":"I'm from Shoreview, Minnesota and graduated from Mounds View High School. I'm majoring in computer science and have a software engineering internship planned for the summer. In my free time I enjoy spending time with friends, playing video games, and working out"},{"name":"Jett Serie","title":"","bn":"921","year":"Senior","major":"Computer Science","chair":"HPLC, CPU","image":"&Jett.png","email":"serie014@umn.edu","bio":"It's uh... uh... it's down there somewhere, let me take another look."},{"name":"Brandon Cheng","title":"","bn":"922","year":"Freshman","major":"Computer Science","chair":" ","image":"IMG_3446.JPG","email":"chen7381@umn.edu","bio":"I am from Taipei, Taiwan. I like to play basketball and work out in my free time. I love the Weeknd."},{"name":"Mathew","title":"","bn":"923","year":"Sophomore","major":"Aerospace Engineering and Mechanics","chair":"Social","image":"16429925133088591799949400846460.jpg","email":"hemsc003@umn.edu","bio":""},{"name":"Annika Bowen","title":"","bn":"924","year":"Sophomore","major":"Chemical Engineering","chair":"","image":"IMG_5330.jpg","email":"bowen298@umn.edu","bio":"I'm from Eagan, MN and In my free time I love to ski, try new foods, and have an excessive mug collection. I am a research assistant working on molecular cloning for the development of a more effective and efficient production method for flu vaccine, and hope to go into pharmaceutical development after graduation."},{"name":"Connor Truelson","title":"Treasurer","bn":"925","year":"Sophomore","major":"Industrial and Systems Engineering","chair":"Assistant Treasurer and Rush Chair","image":"B56C2DD4-42F6-44F6-A670-4FD77164B626.jpeg","email":"truel021@umn.edu","bio":"I like chess. "},{"name":"Shawn Pandya","title":"","bn":"926","year":"Freshman","major":"Chemical Engineering","chair":"","image":"IMG-5274.JPG","email":"pandy057@umn.edu","bio":"I was raised in Beaverton Oregon and lived there most my life. I am studying chemical engineering and psychology. In my spare time I work out, cook, and play the guitar. I've also been learning taekwondo and boxing. After graduation I plan to work as a chemical engineer for 1-2 years; I want my work to contribute to the pharmaceutical field. If this fulfils me I will continue my work, however, if I feel like I can do more I want to go through medical school to become a psychiatrist. If this does not fulfill me then I genuinely have no idea what to do which sounds about right; Oh my god I do not know what is going on. Did you know I'm utterly insane. I think I'm losing my mind. "}]}
+{
+    "members": [
+        {
+            "name": "Jarod Koeppl",
+            "title": "President",
+            "bn": "911",
+            "year": "Junior",
+            "major": "Computer Science",
+            "chair": "Composite Duty",
+            "image": "&Jarod.jpg",
+            "email": "koepp058@umn.edu",
+            "bio": "thanks Andy"
+        },
+        {
+            "name": "Adrika Dasgupta",
+            "title": "Vice President",
+            "bn": "917",
+            "year": "Sophomore",
+            "major": "Computer Science",
+            "chair": "Rush, CSE Outreach",
+            "image": "&Adrika.png",
+            "email": "dasgu058@umn.edu",
+            "bio": "I'm from Maple Grove, MN, and graduated from Wayzata High School in 2020 before coming to the U of M. I am currently studying Computer Science and am a Systems IT Intern at Great River Energy. In my free time, I like to have fun outside, sing, and try to cook\/bake new recipes."
+        },
+        {
+            "name": "Taylor Kettering",
+            "title": "Treasurer",
+            "bn": "904",
+            "year": "Senior",
+            "major": "Chemical Engineering",
+            "chair": "Pledge, Librarian, Influencer",
+            "image": "IMG_3430.jpg",
+            "email": "kette061@umn.edu",
+            "bio": "I'm from Eau Claire, WI, and I graduated from the very small Fall Creek High School. I rushed KHK in the fall of my freshman year and it was the best decision I've ever made. In my free time I enjoy being outdoors and playing volleyball."
+        },
+        {
+            "name": "Dalacie Singh",
+            "title": "Secretary",
+            "bn": "912",
+            "year": "Senior",
+            "major": "Industrial and Systems Engineering",
+            "chair": "Propaganda, Little Sister",
+            "image": "&Dalacie.jpg",
+            "email": "singh829@umn.edu",
+            "bio": "I'm from the tiny town Armstrong, IL. I rushed KHK in the fall semester of my sophomore year and just the thought that I could have missed becoming a part of this amazing community breaks my heart. In my free time I love to create arts and crafts, read, and bake anything I can think of! "
+        },
+        {
+            "name": "Vaibhav Ahuja",
+            "title": "",
+            "bn": "908",
+            "year": "Senior",
+            "major": "Biomedical Engineering \/ Math",
+            "chair": "CSE Outreach",
+            "image": "&Vdawg.png",
+            "email": "ahuja029@umn.edu",
+            "bio": ""
+        },
+        {
+            "name": "Governess Simpson",
+            "title": "",
+            "bn": "910",
+            "year": "Senior",
+            "major": "Industrial and Systems Engineering",
+            "chair": "Historian",
+            "image": "&Governess.jpg",
+            "email": "simps422@umn.edu",
+            "bio": "I'm from Maplewood, Minnesota, and I came to the University of Minnesota in Fall 2017. I'm interested in pursuing a career that combines both my passion for technology and business\/administration. I'm heavily involved in many student groups and organizations, such as the Minnesota Student Association, Atland Ventures, and the National Organization for Business and Engineering. In my free time, I enjoy powerlifting, reading, and programming.."
+        },
+        {
+            "name": "Benjamin Koch",
+            "title": "",
+            "bn": "913",
+            "year": "Junior",
+            "major": "Chemical Engineering",
+            "chair": "Social, Little Sister",
+            "image": "&Ben.png",
+            "email": "koch0299@umn.edu",
+            "bio": "thanks Andy"
+        },
+        {
+            "name": "Daniel Molenaar",
+            "title": "",
+            "bn": "914",
+            "year": "Junior",
+            "major": "Physics",
+            "chair": "Social, Historian",
+            "image": "&Daniel.jpg",
+            "email": "molen042@umn.edu",
+            "bio": "When the tough gets going, the going gets tough"
+        },
+        {
+            "name": "Andy Chen",
+            "title": "",
+            "bn": "915",
+            "year": "Junior",
+            "major": "Computer Science",
+            "chair": "Webmaster, Computer",
+            "image": "image2.png",
+            "email": "chen6640@umn.edu",
+            "bio": "I am a fork in the soup of life"
+        },
+        {
+            "name": "Matthew Schlicht",
+            "title": "",
+            "bn": "916",
+            "year": "Sophomore",
+            "major": "Mechanical Engineering",
+            "chair": "Initiation, Social, Athletics, House Manager",
+            "image": "&Matt.jpg",
+            "email": "schli376@umn.edu",
+            "bio": "I was raised in Appleton, WI where I attended high school. I am currently studying mechanical engineering and one of the students working on getting an electric UMN motorsports team off the ground. In my free time I play guitar, write comedy, and watch the Packers."
+        },
+        {
+            "name": "Elizabeth Sand",
+            "title": "",
+            "bn": "918",
+            "year": "Sophomore",
+            "major": "Interior Design",
+            "chair": "Rush, Propaganda, Influencer",
+            "image": "&Ellie.jpg",
+            "email": "sand1294@umn.edu",
+            "bio": "I'm from Woodstock, Maryland and went to Marriotts Ridge High School. I am originally from Chicago and love all of their sports teams. I\u2019m studying Interior Design and want to work with CAD in the future. I enjoy reading, crafting, and skiing in my free time!"
+        },
+        {
+            "name": "Jack Luukkonen",
+            "title": "",
+            "bn": "919",
+            "year": "Junior",
+            "major": "Electrical Engineering",
+            "chair": "Initiation, Little Sister",
+            "image": "senior_pic.jpg",
+            "email": "luukk021@umn.edu",
+            "bio": "Remember, licking doorknobs is illegal on other planets."
+        },
+        {
+            "name": "Andrew Weiss",
+            "title": "",
+            "bn": "920",
+            "year": "Junior",
+            "major": "Computer Science",
+            "chair": "Initiation, House Manager",
+            "image": "&Andrew.jpg",
+            "email": "weiss518@umn.edu",
+            "bio": "I'm from Shoreview, Minnesota and graduated from Mounds View High School. I'm majoring in computer science and have a software engineering internship planned for the summer. In my free time I enjoy spending time with friends, playing video games, and working out"
+        },
+        {
+            "name": "Jett Serie",
+            "title": "",
+            "bn": "921",
+            "year": "Senior",
+            "major": "Computer Science",
+            "chair": "HPLC, Computer",
+            "image": "&Jett.png",
+            "email": "serie014@umn.edu",
+            "bio": "It's uh... uh... it's down there somewhere, let me take another look."
+        },
+        {
+            "name": "Brandon Cheng",
+            "title": "",
+            "bn": "922",
+            "year": "Freshman",
+            "major": "Computer Science",
+            "chair": "Pledge, Webmaster",
+            "image": "IMG_3446.JPG",
+            "email": "chen7381@umn.edu",
+            "bio": "I am from Taipei, Taiwan. I like to play basketball and work out in my free time. I love the Weeknd."
+        },
+        {
+            "name": "Mathew Hemsch",
+            "title": "",
+            "bn": "923",
+            "year": "Sophomore",
+            "major": "Aerospace Engineering and Mechanics",
+            "chair": "Social",
+            "image": "16429925133088591799949400846460.jpg",
+            "email": "hemsc003@umn.edu",
+            "bio": ""
+        },
+        {
+            "name": "Annika Bowen",
+            "title": "",
+            "bn": "924",
+            "year": "Sophomore",
+            "major": "Chemical Engineering",
+            "chair": "Rush, Propaganda",
+            "image": "IMG_5330.jpg",
+            "email": "bowen298@umn.edu",
+            "bio": "I'm from Eagan, MN and In my free time I love to ski, try new foods, and have an excessive mug collection. I am a research assistant working on molecular cloning for the development of a more effective and efficient production method for flu vaccine, and hope to go into pharmaceutical development after graduation."
+        },
+        {
+            "name": "Connor Truelson",
+            "title": "Assistant Treasurer",
+            "bn": "925",
+            "year": "Sophomore",
+            "major": "Industrial and Systems Engineering",
+            "chair": "Social, Rush",
+            "image": "B56C2DD4-42F6-44F6-A670-4FD77164B626.jpeg",
+            "email": "truel021@umn.edu",
+            "bio": "I like chess. "
+        },
+        {
+            "name": "Shawn Pandya",
+            "title": "",
+            "bn": "926",
+            "year": "Freshman",
+            "major": "Psychology",
+            "chair": "Pledge, Athletics",
+            "image": "IMG-5274.JPG",
+            "email": "pandy057@umn.edu",
+            "bio": "I was raised in Beaverton Oregon and lived there most my life. I am studying chemical engineering and psychology. In my spare time I work out, cook, and play the guitar. I've also been learning taekwondo and boxing. After graduation I plan to work as a chemical engineer for 1-2 years; I want my work to contribute to the pharmaceutical field. If this fulfils me I will continue my work, however, if I feel like I can do more I want to go through medical school to become a psychiatrist. If this does not fulfill me then I genuinely have no idea what to do which sounds about right; Oh my god I do not know what is going on. Did you know I'm utterly insane. I think I'm losing my mind. "
+        }
+    ]
+}

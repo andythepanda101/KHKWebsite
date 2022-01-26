@@ -26,6 +26,7 @@ function load_members(filename, member_section, $) {
 }
 
 // takes a single member and returns the tranlated html, not elegent but works
+// TODO: create members in EC then beta num order
 function make_member(jsonObj) {
   var name = jsonObj["name"];
   var title = jsonObj["title"];
